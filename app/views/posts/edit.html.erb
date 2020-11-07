@@ -1,0 +1,26 @@
+<br>
+<br>
+<br>
+
+<h1>Edit Expense</h1>
+ 
+
+<%= form_for :post, url: post_path(@post), method: :patch do |f| %>
+
+<p>
+
+	<%= f.label :Category %><br>
+	<%= f.text_field(:title, {:class =>'form-control'}) %>
+
+</p>
+
+<p>
+	<%= f.label :Amount %><br>
+	<%= f.text_field(:body,{:class =>'form-control'}) %>
+</p>
+
+<p>
+	<%= f.submit({:class => 'btn btn-primary'}) %>
+</p>
+
+<% end %>

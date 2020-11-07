@@ -1,0 +1,16 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>My Expenses</h2>
+
+<% Post.all.each do |post| %>
+
+<div class="well">
+
+	<h3><%= post.title %></h3>
+	<p><%= post.body  %></p>
+	<%= link_to "Read More", post_path(post), :class =>'btn btn-default' %>
+</div>
+<% end %>
